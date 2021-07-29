@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 /**
  * Class StatisticsController
  * @package App\Controller
- * @Route("/statistics/", name="statistics_")
+ * @Route("/statistics", name="statistics_")
  */
 class StatisticsController extends AbstractController
 {

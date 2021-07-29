@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block header %}
+{% endblock %}
+
+{% block main %}
+    <div class="row" style="height: 100vh">
+        <form class="col-6 d-flex flex-column">
+            <div class="text-center" style="margin: auto;">
+                <img style="height: 80px;" src="/assets/img/user-profil.svg" alt="Icone de l'utilisateur"/>
+
+                <h1 class="text-center font-source-code-pro fw-bold mt-4 mb-5">
+                    Mon Profil
+                </h1>
+
+                <a class="mt-5 px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
+                   style="background: var(--bs-secondary);" href="{{ path('login_connect_wiki_oauth') }}">
+                    Je me connecte avec Wikipédia
+                </a>
+            </div>
+        </form>
+        <div class="col-6 d-flex bg-primary">
+            <img style="margin: auto; height: 100px;" src="/assets/img/logo.svg" alt="Logo de WikiPlayer"/>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}

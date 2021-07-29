@@ -10,6 +10,10 @@
     background-color: var(--bs-light-primary);
 }
 
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
 .shadow {
     box-shadow: 4px 8px 24px var(--bs-shadow) !important;
 }

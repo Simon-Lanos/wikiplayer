@@ -2,8 +2,8 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script src="assets/js/timer.js" type="application/javascript" async></script>
-    <script src="assets/js/home.js" type="application/javascript" defer></script>
+    <script src="/assets/js/timer.js" type="application/javascript" async></script>
+    <script src="/assets/js/home.js" type="application/javascript" defer></script>
 {% endblock %}
 
 {% block header %}
@@ -15,11 +15,11 @@
             </div>
             <div class="d-flex flex-row justify-content-between" style="min-width: 18%">
                 <a class="px-4 py-2 border border-white rounded-pill bg-transparent text-white text-decoration-none fw-bold"
-                   href="#">
+                   href="{{ path('login_index') }}">
                     Inscription
                 </a>
                 <a class="px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
-                   style="background: var(--bs-secondary);" href="#">
+                   style="background: var(--bs-secondary);" href="{{ path('login_index') }}">
                     Connexion
                 </a>
             </div>
@@ -47,7 +47,7 @@
                             <h3 class="font-source-code-pro position-relative mb-5">
                                 Etape 1
                                 <img class="position-absolute top-50 start-100 translate-middle"
-                                     src="assets/img/etape-1.png" alt="Étape 1">
+                                     src="/assets/img/etape-1.png" alt="Étape 1">
                             </h3>
                             <p>
                                 Ouvre ton encyclopédie préférée et cherche du côté de l’historique. Entre remerciements
@@ -60,7 +60,7 @@
                             <h3 class="font-source-code-pro position-relative mb-5">
                                 Etape 2
                                 <img class="position-absolute top-50 start-100 translate-middle"
-                                     src="assets/img/etape-2.png" alt="Étape 2">
+                                     src="/assets/img/etape-2.png" alt="Étape 2">
                             </h3>
                             <p>
                                 La communication est la clé, et ça tu le sais... Utilise ton réseau et connecte toi aux
@@ -73,7 +73,7 @@
                             <h3 class="font-source-code-pro position-relative mb-5">
                                 Etape 3
                                 <img class="position-absolute top-50 start-100 translate-middle"
-                                     src="assets/img/etape-3.png" alt="Étape 3">
+                                     src="/assets/img/etape-3.png" alt="Étape 3">
                             </h3>
                             <p>
                                 Wiki, c’est de l’open source. Or, même dans un monde ouvert, il réside des secrets. Tu
@@ -86,7 +86,7 @@
                             <h3 class="font-source-code-pro position-relative mb-5">
                                 Etape 4
                                 <img class="position-absolute top-50 start-100 translate-middle"
-                                     src="assets/img/etape-4.png" alt="Étape 4">
+                                     src="/assets/img/etape-4.png" alt="Étape 4">
                             </h3>
                             <p>
                                 Résoudre la WikiHunt, ce n’est pas une affaire facile... Vos statistiques parlent.
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <img class="mx-5 w-100" src="assets/img/phone-visu.png" alt="Appercue visuelle mobile">
+                <img class="mx-5 w-100" src="/assets/img/phone-visu.png" alt="Appercue visuelle mobile">
             </div>
             <div class="text-center">
                 <a class="px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
@@ -111,7 +111,7 @@
     <section class="bg-light-primary">
         <div class="row py-4">
             <div class="col-6 text-end">
-                <img class="mx-5" src="assets/img/game-start-coin.png" alt="Jeton commencer la partie"/>
+                <img class="mx-5" src="/assets/img/game-start-coin.png" alt="Jeton commencer la partie"/>
             </div>
             <div class="col-6">
                 <h2 class="font-source-code-pro fw-bold mb-4 text-primary">
@@ -126,15 +126,15 @@
                 <div class="d-flex mt-5">
                     <div class="d-flex rounded-circle p-2 justify-content-center"
                          style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
-                        <img src="assets/img/logo-rs-facebook.svg" alt="Logo du réseau Facebook">
+                        <img src="/assets/img/logo-rs-facebook.svg" alt="Logo du réseau Facebook">
                     </div>
                     <div class="d-flex rounded-circle p-2 mx-4 justify-content-center"
                          style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
-                        <img src="assets/img/logo-rs-twitter.svg" alt="Logo du réseau Facebook">
+                        <img src="/assets/img/logo-rs-twitter.svg" alt="Logo du réseau Facebook">
                     </div>
                     <div class="d-flex rounded-circle p-2 justify-content-center"
                          style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
-                        <img src="assets/img/logo-rs-linkedin.svg" alt="Logo du réseau Facebook">
+                        <img src="/assets/img/logo-rs-linkedin.svg" alt="Logo du réseau Facebook">
                     </div>
                 </div>
             </div>
