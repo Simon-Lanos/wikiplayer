@@ -35,7 +35,7 @@ class WikiResourceOwner implements ResourceOwnerInterface
      */
     public function getId()
     {
-        return $this->getValueByKey($this->response, 'id');
+        return $this->getValueByKey($this->response, 'sub');
     }
 
     /**

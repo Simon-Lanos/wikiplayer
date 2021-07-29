@@ -1,0 +1,180 @@
+{% extends 'base.html.twig' %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="assets/js/timer.js" type="application/javascript" async></script>
+    <script src="assets/js/home.js" type="application/javascript" defer></script>
+{% endblock %}
+
+{% block header %}
+    <div class="text-white"
+         style="min-height: 70vh; background-image: url('/assets/img/home-bg.png'); background-size: cover; background-repeat: no-repeat;">
+        <nav class="mx-5 d-flex flex-row justify-content-between height-10 p-5">
+            <div>
+                <img src="/assets/img/logo.svg" alt="Logo de WikiPlayer">
+            </div>
+            <div class="d-flex flex-row justify-content-between" style="min-width: 18%">
+                <a class="px-4 py-2 border border-white rounded-pill bg-transparent text-white text-decoration-none fw-bold"
+                   href="#">
+                    Inscription
+                </a>
+                <a class="px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
+                   style="background: var(--bs-secondary);" href="#">
+                    Connexion
+                </a>
+            </div>
+        </nav>
+        <div class="d-flex">
+            <div class="d-flex flex-column text-center font-inter" style="margin: 0 auto">
+                <span>La saison 01 de WikiHunt commence dans :</span>
+                <span id="timer" class="rounded-3 fs-2 font-source-code-pro fw-bold"
+                      style="background: var(--bs-primary);"></span>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block main %}
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-8">
+                <h2 class="font-source-code-pro">
+                    Qu’est-ce que la Wikihunt&nbsp;?
+                </h2>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="shadow p-3 my-5 me-5 rounded-10">
+                            <h3 class="font-source-code-pro position-relative mb-5">
+                                Etape 1
+                                <img class="position-absolute top-50 start-100 translate-middle"
+                                     src="assets/img/etape-1.png" alt="Étape 1">
+                            </h3>
+                            <p>
+                                Ouvre ton encyclopédie préférée et cherche du côté de l’historique. Entre remerciements
+                                et rééditions tu trouveras forcément la meilleure option.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="shadow p-3 my-5 ms-5 rounded-10">
+                            <h3 class="font-source-code-pro position-relative mb-5">
+                                Etape 2
+                                <img class="position-absolute top-50 start-100 translate-middle"
+                                     src="assets/img/etape-2.png" alt="Étape 2">
+                            </h3>
+                            <p>
+                                La communication est la clé, et ça tu le sais... Utilise ton réseau et connecte toi aux
+                                autres. Ces derniers pourraient en être la clé.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="shadow p-3 my-5 me-5 rounded-10">
+                            <h3 class="font-source-code-pro position-relative mb-5">
+                                Etape 3
+                                <img class="position-absolute top-50 start-100 translate-middle"
+                                     src="assets/img/etape-3.png" alt="Étape 3">
+                            </h3>
+                            <p>
+                                Wiki, c’est de l’open source. Or, même dans un monde ouvert, il réside des secrets. Tu
+                                ferais mieux de vite les trouver.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="shadow p-3 my-5 ms-5 rounded-10">
+                            <h3 class="font-source-code-pro position-relative mb-5">
+                                Etape 4
+                                <img class="position-absolute top-50 start-100 translate-middle"
+                                     src="assets/img/etape-4.png" alt="Étape 4">
+                            </h3>
+                            <p>
+                                Résoudre la WikiHunt, ce n’est pas une affaire facile... Vos statistiques parlent.
+                                Consultez-les, c’est la finalité&nbsp;!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <img class="mx-5 w-100" src="assets/img/phone-visu.png" alt="Appercue visuelle mobile">
+            </div>
+            <div class="text-center">
+                <a class="px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
+                   style="background: var(--bs-secondary);" href="#">
+                    En savoir plus
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light-primary">
+        <div class="row py-4">
+            <div class="col-6 text-end">
+                <img class="mx-5" src="assets/img/game-start-coin.png" alt="Jeton commencer la partie"/>
+            </div>
+            <div class="col-6">
+                <h2 class="font-source-code-pro fw-bold mb-4 text-primary">
+                    Rejoignez-nous sur les réseaux&nbsp;!
+                </h2>
+                <p class="me-5 pe-5">
+                    Vous avez besoin d’aide&nbsp;? Rejoignez-nous dès maintenant sur nos réseaux et posez-nous toutes vos
+                    questions&nbsp;! Une équipe de modérateurs aguéris est prête à vous répondre, à tout moment, sur
+                    tous les sujets... Comme on dit, le mage n’est pas le plus fort, il n’est que le plus sage.
+                    N’hésites donc pas à lui poser problème, ce n’est que son usage.
+                </p>
+                <div class="d-flex mt-5">
+                    <div class="d-flex rounded-circle p-2 justify-content-center"
+                         style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
+                        <img src="assets/img/logo-rs-facebook.svg" alt="Logo du réseau Facebook">
+                    </div>
+                    <div class="d-flex rounded-circle p-2 mx-4 justify-content-center"
+                         style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
+                        <img src="assets/img/logo-rs-twitter.svg" alt="Logo du réseau Facebook">
+                    </div>
+                    <div class="d-flex rounded-circle p-2 justify-content-center"
+                         style="width: 50px; height: 50px; background-color: var(--bs-secondary)">
+                        <img src="assets/img/logo-rs-linkedin.svg" alt="Logo du réseau Facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 px-5">
+        <div class="mx-5 px-5">
+            <h2 class="font-source-code-pro fw-bold text-center">
+                Quelques chiffres sur nos contributeurs
+            </h2>
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div id="circle-1" class="d-flex justify-content-center"></div>
+                    <p class="text-center w-50 text-secondary fw-bold my-3" style="margin: 0 auto">
+                        87%
+                    </p>
+                    <p class="text-center w-50" style="margin: 0 auto">
+                        C’est le nombre de contributeurs Wikipédia en France sur une année
+                    </p>
+                </div>
+                <div class="col-4">
+                    <div id="circle-2" class="d-flex justify-content-center"></div>
+                    <p class="text-center w-50 text-secondary fw-bold my-3" style="margin: 0 auto">
+                        58%
+                    </p>
+                    <p class="text-center w-50 " style="margin: 0 auto">
+                        Ils sont plus d’un tiers à avoir atteint le rang de mage&nbsp;!
+                    </p>
+                </div>
+                <div class="col-4">
+                    <div id="circle-3" class="d-flex justify-content-center"></div>
+                    <p class="text-center w-50 text-secondary fw-bold my-3" style="margin: 0 auto">
+                        38%
+                    </p>
+                    <p class="text-center w-50" style="margin: 0 auto">
+                        Ils nous ont rejoint depuis moins d’un an&nbsp;! Bienvenue...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

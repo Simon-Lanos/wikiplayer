@@ -63,7 +63,7 @@ class WikiProvider extends AbstractProvider
      */
     protected function getScopeSeparator(): string
     {
-        return ' ';
+        return '|';
     }
 
     /**
@@ -77,8 +77,6 @@ class WikiProvider extends AbstractProvider
     protected function getDefaultScopes(): array
     {
         return [
-            'sub',
-            'username',
         ];
     }
 
