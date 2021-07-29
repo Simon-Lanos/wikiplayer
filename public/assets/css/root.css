@@ -3,7 +3,10 @@
     --bs-light-primary: rgba(89, 2, 229, .05);
     --bs-secondary: #FBA90A;
 
-    --bs-shadow: rgba(89, 2, 229, .15);;
+    --bs-shadow: rgba(89, 2, 229, .15);
+
+    --progress-bg-color: #873FFD;
+    --progress-current-bg-color: #4A02C0;
 }
 
 .bg-light-primary {
@@ -45,3 +48,20 @@ body, .font-inter {
 .rounded-10 {
     border-radius: 33px !important;
 }
+
+progress {
+    -webkit-appearance: none;
+}
+
+::-webkit-progress-bar, ::-moz-progress-bar {
+    background-color: var(--progress-current-bg-color);
+}
+
+::-webkit-progress-value {
+    background-color: orange;
+}
+
+::-webkit-progress-inner-element {
+    border: 2px solid black;
+}
+
