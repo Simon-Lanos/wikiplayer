@@ -1,0 +1,43 @@
+:root {
+    --bs-primary: rgba(89, 2, 229, 1);
+    --bs-light-primary: rgba(89, 2, 229, .05);
+    --bs-secondary: #FBA90A;
+
+    --bs-shadow: rgba(89, 2, 229, .15);;
+}
+
+.bg-light-primary {
+    background-color: var(--bs-light-primary);
+}
+
+.shadow {
+    box-shadow: 4px 8px 24px var(--bs-shadow) !important;
+}
+
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-secondary {
+    color: var(--bs-secondary) !important;
+}
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Source Code Pro', monospace;
+}
+
+body, .font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-source-code-pro {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.rounded-10 {
+    border-radius: 33px !important;
+}
