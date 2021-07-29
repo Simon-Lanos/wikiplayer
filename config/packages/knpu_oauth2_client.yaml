@@ -15,8 +15,8 @@ knpu_oauth2_client:
             # provider_options: {}
 
             # now, all the normal options!
-            client_id: '%env(BETA_OAUTH_WIKI_ID)%'
-            client_secret: '%env(BETA_OAUTH_WIKI_SECRET)%'
+            client_id: '%env(OAUTH_WIKI_ID)%'
+            client_secret: '%env(OAUTH_WIKI_SECRET)%'
             redirect_route: login_check_wiki_oauth
             redirect_params: { }
             # whether to check OAuth2 "state": defaults to true

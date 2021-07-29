@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div>
+        <label for="progress">Votre rang : <span id="rank"></span></label>
+        <progress id="progress" max="600"></progress>
+        <span id="rank-value"></span>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="/assets/js/wikipedia.js" type="application/javascript" async></script>
+{% endblock %}
