@@ -1,11 +1,48 @@
 {% extends 'base.html.twig' %}
 
 {% block main %}
-    <div>
-        <label for="progress">Votre rang : <span id="rank"></span></label>
-        <progress id="progress" max="600"></progress>
-        <span id="rank-value"></span>
-    </div>
+    <section class="bg-primary p-5 text-white">
+        <h1 class="mb-5 font-source-code-pro fw-bold text-center">Mes points de classement</h1>
+{#        <label for="progress">Votre rang : <span id="rank"></span></label>#}
+{#        <progress id="progress" max="600"></progress>#}
+{#        <span id="rank-value"></span>#}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/assets/img/profil.png" alt="Votre profil"/>
+                </div>
+                <div class="col-6">
+                    <div class="fw-bold mb-4">
+                        {{ user.username }}
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-between">
+                        <div>
+                            <span id="rank-value">0</span> points
+                        </div>
+                        <div>
+                            <span id="rank-max">600</span> points
+                        </div>
+                    </div>
+                    <div class="progress" style="background-color: var(--progress-bg-color);">
+                        <div id="progress" class="progress-bar p-0" role="progressbar" style="background-color: var(--progress-current-bg-color);" aria-valuenow="25" aria-valuemin="0" aria-valuemax="600"></div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a class="mt-5 px-4 py-2 border-0 rounded-pill text-white text-decoration-none fw-bold"
+                           style="background: var(--bs-secondary);" href="#">
+                            Mon historique
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="height: 80vh;">
+
+    </section>
 {% endblock %}
 
 {% block javascripts %}

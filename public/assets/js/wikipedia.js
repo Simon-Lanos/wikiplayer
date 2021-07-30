@@ -50,16 +50,20 @@ const updateRank = score => {
     const [rankToSet] = availableRanks;
 
     let progress = document.querySelector('#progress');
-    let rankLabel = document.querySelector('#rank');
+    //let rankLabel = document.querySelector('#rank');
     let rankValue = document.querySelector('#rank-value');
+    let rankMax = document.querySelector('#rank-max');
 
-    rankLabel.textContent = rankToSet.name.capitalize();
+    //rankLabel.textContent = rankToSet.name.capitalize();
 
-    const rankText = `${score} / ${rankToSet.max === -1 ? rankToSet.min : rankToSet.max }`;
+    const rankText = `${score}`;
+    const rankMaxText = `${rankToSet.max === -1 ? rankToSet.min : rankToSet.max }`;
     rankValue.textContent = rankText;
+    rankMax.textContent = rankMaxText;
     progress.max = rankToSet.max;
     progress.value = score;
     progress.title = rankText;
+    progress.style.width = `${(score * 100) / (rankToSet.max === -1 ? score : rankToSet.max)}%`;
 };
 
 const headers = new Headers();

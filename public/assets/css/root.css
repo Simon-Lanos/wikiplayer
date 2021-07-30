@@ -52,16 +52,3 @@ body, .font-inter {
 progress {
     -webkit-appearance: none;
 }
-
-::-webkit-progress-bar, ::-moz-progress-bar {
-    background-color: var(--progress-current-bg-color);
-}
-
-::-webkit-progress-value {
-    background-color: orange;
-}
-
-::-webkit-progress-inner-element {
-    border: 2px solid black;
-}
-

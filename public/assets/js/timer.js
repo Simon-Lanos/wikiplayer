@@ -1,5 +1,5 @@
 const timer = document.querySelector('#timer');
-let time = (new Date("Oct 1, 2021 00:00:00").getTime() - new Date()) / 1000; //1837879 //seconds until dawn
+let time = (new Date("Aug 1, 2021 00:00:00").getTime() - new Date()) / 1000; //1837879 //seconds until dawn
 
 setInterval(
     () => {
