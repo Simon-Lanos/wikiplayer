@@ -50,11 +50,11 @@ const updateRank = score => {
     const [rankToSet] = availableRanks;
 
     let progress = document.querySelector('#progress');
-    //let rankLabel = document.querySelector('#rank');
     let rankValue = document.querySelector('#rank-value');
     let rankMax = document.querySelector('#rank-max');
+    let badge = document.querySelector('#badge');
 
-    //rankLabel.textContent = rankToSet.name.capitalize();
+    const baseBadgeUrl = '/assets/img/';
 
     const rankText = `${score}`;
     const rankMaxText = `${rankToSet.max === -1 ? rankToSet.min : rankToSet.max }`;
@@ -64,6 +64,7 @@ const updateRank = score => {
     progress.value = score;
     progress.title = rankText;
     progress.style.width = `${(score * 100) / (rankToSet.max === -1 ? score : rankToSet.max)}%`;
+    badge.src = baseBadgeUrl + rankToSet.name + '.svg';
 };
 
 const headers = new Headers();
