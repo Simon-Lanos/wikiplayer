@@ -16,7 +16,7 @@ Circles.create({
 Circles.create({
         id:           'circle-2',
         radius:       60,
-        value:        58,
+        value:        38,
         maxValue:     100,
         width:        18,
         text:         '',
@@ -31,7 +31,7 @@ Circles.create({
 Circles.create({
         id:           'circle-3',
         radius:       60,
-        value:        38,
+        value:        58,
         maxValue:     100,
         width:        18,
         text:         '',
